@@ -104,7 +104,7 @@ def delete(id):
     my_data = Users.query.get(id)
     db.session.delete(my_data)
     db.session.commit()
-    flash("Employee Deleted Successfully")
+    flash("User Deleted Successfully")
 
     return redirect(url_for('Index'))
 
